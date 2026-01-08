@@ -324,54 +324,6 @@ in
         Rows = 2;
       };
 
-      #      kwinrulesrc.General.count = 7;
-      #      kwinrulesrc.General.rules = "996f6099-9c64-4bb3-9668-41bf294aba15,ce43c0b4-1db5-4bb0-b637-a8cbb3c2b0d5,fbf4dada-267b-48de-9df3-09e14a5dc012,143abaff-3d69-4781-9396-a7bf2f311c60,7561dd4f-e458-4511-bd10-072156dffd2a,22830e98-342b-45f4-8f13-8e571f67530c,57d8abfa-8f88-4357-803b-5cfaacaaea6f";
-      #      kwinrulesrc."143abaff-3d69-4781-9396-a7bf2f311c60".Description = "Settings for thunderbird";
-      #      kwinrulesrc."143abaff-3d69-4781-9396-a7bf2f311c60".desktops =
-      #        "1c21f121-6763-4b45-8fbc-303e412393c1";
-      #      kwinrulesrc."143abaff-3d69-4781-9396-a7bf2f311c60".desktopsrule = 3;
-      #      kwinrulesrc."143abaff-3d69-4781-9396-a7bf2f311c60".wmclass = "thunderbird";
-      #      kwinrulesrc."143abaff-3d69-4781-9396-a7bf2f311c60".wmclassmatch = 1;
-      #      kwinrulesrc."22830e98-342b-45f4-8f13-8e571f67530c".Description = "Settings for jetbrains-rubymine";
-      #      kwinrulesrc."22830e98-342b-45f4-8f13-8e571f67530c".desktops =
-      #        "1c21f121-6763-4b45-8fbc-303e412393c1";
-      #      kwinrulesrc."22830e98-342b-45f4-8f13-8e571f67530c".desktopsrule = 3;
-      #      kwinrulesrc."22830e98-342b-45f4-8f13-8e571f67530c".wmclass = "jetbrains-rubymine";
-      #      kwinrulesrc."22830e98-342b-45f4-8f13-8e571f67530c".wmclassmatch = 1;
-      #      kwinrulesrc."57d8abfa-8f88-4357-803b-5cfaacaaea6f".Description = "Settings for vivaldi-stable";
-      #      kwinrulesrc."57d8abfa-8f88-4357-803b-5cfaacaaea6f".desktops =
-      #        "6b0cc808-51bb-4b2f-8016-3929d206d3ff";
-      #      kwinrulesrc."57d8abfa-8f88-4357-803b-5cfaacaaea6f".desktopsrule = 3;
-      #      kwinrulesrc."57d8abfa-8f88-4357-803b-5cfaacaaea6f".wmclass = "vivaldi-stable";
-      #      kwinrulesrc."57d8abfa-8f88-4357-803b-5cfaacaaea6f".wmclassmatch = 1;
-      #      kwinrulesrc."7561dd4f-e458-4511-bd10-072156dffd2a".Description = "Settings for steam";
-      #      kwinrulesrc."7561dd4f-e458-4511-bd10-072156dffd2a".desktops =
-      #        "1c21f121-6763-4b45-8fbc-303e412393c1";
-      #      kwinrulesrc."7561dd4f-e458-4511-bd10-072156dffd2a".desktopsrule = 3;
-      #      kwinrulesrc."7561dd4f-e458-4511-bd10-072156dffd2a".wmclass = "steam";
-      #      kwinrulesrc."7561dd4f-e458-4511-bd10-072156dffd2a".wmclassmatch = 1;
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".Description = "Settings for kitty";
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".desktops =
-      #        "ac3941b0-b16c-4cbb-a1c6-d00a573dc56f";
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".desktopsrule = 3;
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".maximizehoriz = true;
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".maximizehorizrule = 3;
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".maximizevert = true;
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".maximizevertrule = 3;
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".noborder = true;
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".noborderrule = 3;
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".wmclass = "kitty";
-      #      kwinrulesrc."996f6099-9c64-4bb3-9668-41bf294aba15".wmclassmatch = 1;
-      #      kwinrulesrc.ce43c0b4-1db5-4bb0-b637-a8cbb3c2b0d5.Description = "Settings for firefox";
-      #      kwinrulesrc.ce43c0b4-1db5-4bb0-b637-a8cbb3c2b0d5.desktops = "2da0dc38-a677-47ac-8e3f-c16777fc7e87";
-      #      kwinrulesrc.ce43c0b4-1db5-4bb0-b637-a8cbb3c2b0d5.desktopsrule = 3;
-      #      kwinrulesrc.ce43c0b4-1db5-4bb0-b637-a8cbb3c2b0d5.wmclass = "firefox";
-      #      kwinrulesrc.ce43c0b4-1db5-4bb0-b637-a8cbb3c2b0d5.wmclassmatch = 1;
-      #      kwinrulesrc.fbf4dada-267b-48de-9df3-09e14a5dc012.Description = "Settings for Ferdium";
-      #      kwinrulesrc.fbf4dada-267b-48de-9df3-09e14a5dc012.desktops = "6b0cc808-51bb-4b2f-8016-3929d206d3ff";
-      #      kwinrulesrc.fbf4dada-267b-48de-9df3-09e14a5dc012.desktopsrule = 2;
-      #      kwinrulesrc.fbf4dada-267b-48de-9df3-09e14a5dc012.wmclass = "Ferdium";
-      #      kwinrulesrc.fbf4dada-267b-48de-9df3-09e14a5dc012.wmclassmatch = 1;
       kxkbrc.Layout.DisplayNames = ",";
       kxkbrc.Layout.LayoutList = "cz,cz";
       kxkbrc.Layout.Use = true;
