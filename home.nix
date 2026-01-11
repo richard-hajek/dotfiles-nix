@@ -242,7 +242,7 @@ in
         description = "Settings for pycharm";
         match.window-class.value = "jetbrains-pycharm jetbrains-pycharm";
         apply.desktops = {
-          value = desktops.d5;
+          value = desktops.d3;
           apply = "force";
         };
       }
@@ -251,7 +251,7 @@ in
         description = "Settings for obsidian";
         match.window-class.value = "obsidian obsidian";
         apply.desktops = {
-          value = desktops.d5;
+          value = desktops.d3;
           apply = "force";
         };
       }
