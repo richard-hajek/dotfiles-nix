@@ -23,6 +23,25 @@ in
 
     programs.home-manager.enable = true;
 
+      programs.obs-studio = {
+    enable = true;
+
+    # optional Nvidia hardware acceleration
+    package = (
+      pkgs.obs-studio.override {
+        cudaSupport = true;
+      }
+    );
+
+    plugins = with pkgs.obs-studio-plugins; [
+      wlrobs
+      obs-backgroundremoval
+      obs-pipewire-audio-capture
+      obs-gstreamer
+      obs-vkcapture
+    ];
+  };
+
     home = {
         stateVersion = "25.11";
 
@@ -35,16 +54,16 @@ in
             fzf
             gcc
             gimp
-            go
-            hexchat
+            godot
             jetbrains.goland
             jetbrains.pycharm
             jetbrains.ruby-mine
+            jetbrains.rust-rover
             kdePackages.kate
-            kdePackages.konversation
             killall
             kitty
             lazydocker
+            libreoffice
             lsof
             ncdu
             nixfmt-rfc-style
@@ -146,7 +165,7 @@ in
         window-rules = [
             {
                 description = "Settings for kitty";
-                match.window-class.value = "kitty";
+                match.window-class.value = "kitty kitty";
                 apply = {
                     desktops.value = desktops.d1;
                     desktops.apply = "force";
@@ -167,64 +186,64 @@ in
 
             {
                 description = "Settings for firefox";
-                match.window-class.value = "firefox";
+                match.window-class.value = "firefox firefox";
                 apply.desktops = {
                     value = desktops.d2;
-                    apply = "initially";
+                    apply = "force";
                 };
             }
 
             {
                 description = "Settings for thunderbird";
-                match.window-class.value = "thunderbird";
+                match.window-class.value = "thunderbird thunderbird";
                 apply.desktops = {
                     value = desktops.d3;
-                    apply = "initially";
+                    apply = "force";
                 };
             }
 
             {
                 description = "Settings for jetbrains-rubymine";
-                match.window-class.value = "jetbrains-rubymine";
+                match.window-class.value = "jetbrains-rubymine jetbrains-rubymine";
                 apply.desktops = {
                     value = desktops.d3;
-                    apply = "initially";
+                    apply = "force";
                 };
             }
 
             {
                 description = "Settings for steam";
-                match.window-class.value = "steam";
+                match.window-class.value = "steamwebhelper steam";
                 apply.desktops = {
                     value = desktops.d3;
-                    apply = "initially";
+                    apply = "force";
                 };
             }
 
             {
                 description = "Settings for vivaldi-stable";
-                match.window-class.value = "vivaldi-stable";
+                match.window-class.value = "vivaldi-stable vivaldi-stable";
                 apply.desktops = {
                     value = desktops.d5;
-                    apply = "initially";
+                    apply = "force";
                 };
             }
 
             {
                 description = "Settings for pycharm";
-                match.window-class.value = "jetbrains-pycharm";
+                match.window-class.value = "jetbrains-pycharm jetbrains-pycharm";
                 apply.desktops = {
                     value = desktops.d5;
-                    apply = "initially";
+                    apply = "force";
                 };
             }
 
             {
                 description = "Settings for obsidian";
-                match.window-class.value = "obsidian";
+                match.window-class.value = "obsidian obsidian";
                 apply.desktops = {
                     value = desktops.d5;
-                    apply = "initially";
+                    apply = "force";
                 };
             }
         ];
