@@ -69,10 +69,12 @@ in
       nixfmt-rfc-style
       obsidian
       opencode
+      ripgrep
       thunderbird
       uv
       zoxide
-      ripgrep
+      libnotify
+      glib
 
       (vivaldi.overrideAttrs (oldAttrs: {
         dontWrapQtApps = false;
