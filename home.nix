@@ -71,7 +71,6 @@ in
       opencode
       ripgrep
       thunderbird
-      uv
       zoxide
       libnotify
       glib
