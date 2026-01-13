@@ -231,7 +231,7 @@ in
 
       {
         description = "Settings for vivaldi-stable";
-        match.window-class.value = "vivaldi-stable vivaldi-stable";
+        match.window-class.value = "vivaldi-bin vivaldi-stable";
         apply.desktops = {
           value = desktops.d5;
           apply = "force";
