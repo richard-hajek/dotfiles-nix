@@ -220,6 +220,15 @@ in
       }
 
       {
+        description = "Settings for jetbrains-rustrover";
+        match.window-class.value = "jetbrains-rustrover jetbrains-rustrover";
+        apply.desktops = {
+          value = desktops.d3;
+          apply = "force";
+        };
+      }
+
+      {
         description = "Settings for steam";
         match.window-class.value = "steamwebhelper steam";
         apply.desktops = {
