@@ -15,12 +15,6 @@ let
   };
 in
 {
-
-  imports = [
-    <plasma-manager/modules>
-    ./user.nix
-  ];
-
   programs.home-manager.enable = true;
 
   programs.obs-studio = {
@@ -66,7 +60,7 @@ in
       libreoffice
       lsof
       ncdu
-      nixfmt-rfc-style
+      nixfmt
       obsidian
       opencode
       ripgrep
@@ -151,12 +145,39 @@ in
             };
 
           }
+
           { pager = { }; }
+
           "org.kde.plasma.marginsseparator"
+
           {
             iconTasks = {
               launchers = [ ];
               behavior.grouping.method = "none";
+            };
+          }
+          {
+            systemMonitor = {
+              sensors = [
+                {
+                  name = "cpu/all/usage";
+                  label = "%CPU";
+                  color = "255,255,255";
+                }
+              ];
+              totalSensors = [ "cpu/all/usage" ];
+            };
+          }
+          {
+            systemMonitor = {
+              sensors = [
+                {
+                  name = "memory/physical/usedPercent";
+                  label = "%MEM";
+                  color = "0,255,255";
+                }
+              ];
+              totalSensors = [ "memory/physical/usedPercent" ];
             };
           }
           { systemTray = { }; }
