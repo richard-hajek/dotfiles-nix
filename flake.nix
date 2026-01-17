@@ -24,27 +24,25 @@
       ...
     }:
     let
-      user-vars = import ./user-vars.nix;
-      username = user-vars.username;
+      mkHome = username:
+          home-manager.lib.homeManagerConfiguration {
+            pkgs = import nixpkgs { system = "x86_64-linux"; config.allowUnfree = true; };
+
+            modules = [
+              inputs.plasma-manager.homeModules.plasma-manager
+              ./home.nix
+              {
+                home.username = username;
+                home.homeDirectory = "/home/${username}";
+              }
+            ];
+          };
       system = "x86_64-linux";
     in
     {
-      homeConfigurations.meowxiik = home-manager.lib.homeManagerConfiguration {
-        pkgs = import nixpkgs { system = "x86_64-linux"; config.allowUnfree = true; };
-
-        modules = [
-          inputs.plasma-manager.homeModules.plasma-manager
-
-          # Specify the path to your home configuration here:
-          ./home.nix
-
-          {
-            home = {
-              inherit username;
-              homeDirectory = "/home/${username}";
-            };
-          }
-        ];
+    homeConfigurations = {
+        meowxiik = mkHome "meowxiik";
+        rhajek   = mkHome "rhajek";
       };
     };
 }
