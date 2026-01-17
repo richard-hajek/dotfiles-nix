@@ -278,7 +278,7 @@ in
 
       {
         description = "Settings for obsidian";
-        match.window-class.value = "obsidian obsidian";
+        match.window-class.value = "electron obsidian";
         apply.desktops = {
           value = desktops.d3;
           apply = "force";
@@ -288,6 +288,7 @@ in
 
     configFile = {
       kcminputrc."Libinput/1133/16514/Logitech MX Master 3".PointerAccelerationProfile = 1;
+      baloofilerc."Basic Settings"."Indexing-Enabled" = false;
 
       kdeglobals.KDE.AnimationDurationFactor = 0;
 
