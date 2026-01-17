@@ -162,7 +162,7 @@ in
                 {
                   name = "cpu/all/usage";
                   label = "%CPU";
-                  color = "255,255,255";
+                  color = "0,255,255";
                 }
               ];
               totalSensors = [ "cpu/all/usage" ];
@@ -174,7 +174,7 @@ in
                 {
                   name = "memory/physical/usedPercent";
                   label = "%MEM";
-                  color = "0,255,255";
+                  color = "255,0,0";
                 }
               ];
               totalSensors = [ "memory/physical/usedPercent" ];
