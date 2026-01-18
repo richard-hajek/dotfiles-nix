@@ -36,6 +36,19 @@ in
     ];
   };
 
+  # TODO: Make this work
+  # file = {
+  #   "Projects" = config.lib.file.mkOutOfStoreSymlink ./Cloud/Projects;
+  #   "mnt/meowxiik" = config.lib.file.mkOutOfStoreSymlink /mnt/windows/Users/meowxiik;
+  # };
+
+  # activation = {
+  #  directlink = lib.hm.dag.entryAfter [ "writeBoundary" ] (''
+  #    $DRY_RUN_CMD ln -sfvn /home/meowxiik/Cloud/Projects /home/meowxiik/Projects
+  #  '');
+  # };
+
+
   home = {
     stateVersion = "25.11";
 
@@ -44,10 +57,12 @@ in
       chezmoi
       delta
       devbox
+      diffoscope
       foreman
       fzf
       gcc
       gimp
+      glib
       godot
       jetbrains.goland
       jetbrains.pycharm
@@ -57,8 +72,10 @@ in
       killall
       kitty
       lazydocker
+      libnotify
       libreoffice
       lsof
+      magic-wormhole
       ncdu
       nixfmt
       obsidian
@@ -66,8 +83,6 @@ in
       ripgrep
       thunderbird
       zoxide
-      libnotify
-      glib
 
       (vivaldi.overrideAttrs (oldAttrs: {
         dontWrapQtApps = false;
