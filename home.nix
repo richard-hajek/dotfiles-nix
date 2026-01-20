@@ -54,6 +54,7 @@ in
 
     packages = with pkgs; [
       blender
+      bat
       chezmoi
       delta
       devbox
