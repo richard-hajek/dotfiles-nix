@@ -70,6 +70,7 @@ in
       jetbrains.pycharm
       jetbrains.ruby-mine
       jetbrains.rust-rover
+      jetbrains.idea
       kdePackages.kate
       killall
       kitty
