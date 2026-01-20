@@ -53,8 +53,9 @@ in
     stateVersion = "25.11";
 
     packages = with pkgs; [
-      blender
+      atool
       bat
+      blender
       chezmoi
       delta
       devbox
@@ -83,6 +84,7 @@ in
       opencode
       ripgrep
       thunderbird
+      unzip
       zoxide
 
       (vivaldi.overrideAttrs (oldAttrs: {
