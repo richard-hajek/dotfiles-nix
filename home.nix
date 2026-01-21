@@ -175,6 +175,19 @@ in
               behavior.grouping.method = "none";
             };
           }
+          "org.kde.plasma.marginsseparator"
+          {
+            systemMonitor = {
+              sensors = [
+                {
+                  name = "disks/nvme0n1p8/usedPercent";
+                  label = "%CPU";
+                  color = "0,255,255";
+                }
+              ];
+              totalSensors = [ "cpu/all/usage" ];
+            };
+          }
           {
             systemMonitor = {
               sensors = [
@@ -199,6 +212,7 @@ in
               totalSensors = [ "memory/physical/usedPercent" ];
             };
           }
+          "org.kde.plasma.marginsseparator"
           { systemTray = { }; }
           {
             digitalClock = {
