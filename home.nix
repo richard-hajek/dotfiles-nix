@@ -286,6 +286,15 @@ in
       }
 
       {
+        description = "Settings for jetbrains-idea";
+        match.window-class.value = "jetbrains-idea jetbrains-idea";
+        apply.desktops = {
+          value = desktops.d3;
+          apply = "force";
+        };
+      }
+
+      {
         description = "Settings for steam";
         match.window-class.value = "steamwebhelper steam";
         apply.desktops = {
