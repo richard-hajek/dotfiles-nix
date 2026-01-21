@@ -13,6 +13,7 @@ let
     d9 = "07994b29-4300-411e-a700-e974213d7e18";
     d10 = "1d37361f-3316-4cd3-ae3b-77a441e6a127";
   };
+  disk_uuid = "312b28bd-3d5b-4c9e-8f09-b3c40b4dc5c0";
 in
 {
   programs.home-manager.enable = true;
@@ -66,11 +67,12 @@ in
       gimp
       glib
       godot
+      htop
       jetbrains.goland
+      jetbrains.idea
       jetbrains.pycharm
       jetbrains.ruby-mine
       jetbrains.rust-rover
-      jetbrains.idea
       kdePackages.kate
       killall
       kitty
@@ -180,12 +182,12 @@ in
             systemMonitor = {
               sensors = [
                 {
-                  name = "disks/nvme0n1p8/usedPercent";
-                  label = "%CPU";
-                  color = "0,255,255";
+                  name = "disk/${disk_uuid}/usedPercent";
+                  label = "%Disk";
+                  color = "255,255,0";
                 }
               ];
-              totalSensors = [ "cpu/all/usage" ];
+              totalSensors = [ "disk/${disk_uuid}/usedPercent" ];
             };
           }
           {
