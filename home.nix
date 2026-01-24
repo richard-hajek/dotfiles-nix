@@ -68,6 +68,7 @@ in
       glib
       godot
       htop
+      direnv
       jetbrains.goland
       jetbrains.idea
       jetbrains.pycharm
