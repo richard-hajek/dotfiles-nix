@@ -90,6 +90,7 @@ in
       ripgrep
       thunderbird
       unzip
+      yazi
       zoxide
 
       (vivaldi.overrideAttrs (oldAttrs: {
