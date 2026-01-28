@@ -61,6 +61,7 @@ in
       delta
       devbox
       diffoscope
+      direnv
       foreman
       fzf
       gcc
@@ -68,13 +69,12 @@ in
       glib
       godot
       htop
-      direnv
       jetbrains.goland
+      jetbrains.idea
       jetbrains.idea
       jetbrains.pycharm
       jetbrains.ruby-mine
       jetbrains.rust-rover
-      jetbrains.idea
       kdePackages.kate
       killall
       kitty
@@ -90,6 +90,7 @@ in
       ripgrep
       thunderbird
       unzip
+      wl-clipboard
       yazi
       zoxide
 
