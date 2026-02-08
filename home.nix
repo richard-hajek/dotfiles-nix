@@ -75,6 +75,7 @@ in
       jetbrains.pycharm
       jetbrains.ruby-mine
       jetbrains.rust-rover
+      jq
       kdePackages.kate
       killall
       kitty
