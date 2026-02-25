@@ -69,6 +69,7 @@ in
       glib
       godot
       htop
+      itch
       jetbrains.goland
       jetbrains.idea
       jetbrains.idea
