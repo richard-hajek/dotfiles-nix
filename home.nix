@@ -64,6 +64,7 @@ in
       devbox
       diffoscope
       direnv
+      duc
       foreman
       fzf
       gcc
