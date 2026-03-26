@@ -18,6 +18,8 @@ in
 {
   programs.home-manager.enable = true;
 
+  news.display = "silent";
+
   programs.obs-studio = {
     enable = true;
 
