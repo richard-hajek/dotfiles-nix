@@ -97,6 +97,7 @@ in
       unzip
       wl-clipboard
       yazi
+      zed-editor
       zoxide
 
       (vivaldi.overrideAttrs (oldAttrs: {
