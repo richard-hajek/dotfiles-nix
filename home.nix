@@ -94,6 +94,7 @@ in
       opencode
       ripgrep
       thunderbird
+      typst
       unzip
       wl-clipboard
       yazi
