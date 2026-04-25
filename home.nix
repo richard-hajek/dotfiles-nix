@@ -93,6 +93,7 @@ in
       obsidian
       opencode
       ripgrep
+      rustup
       thunderbird
       typst
       unzip
